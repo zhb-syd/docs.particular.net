@@ -4,7 +4,7 @@
   Category: Core
   ProjectUrl: https://github.com/Particular/NServiceBus
   NugetOrder:
-    - NServiceBus
+    - Core
 
 - Key: Anotar
   Name: Anotar Logger
@@ -12,7 +12,7 @@
   Category: Logger
   ProjectUrl: https://github.com/Fody/Anotar
   NugetOrder:
-    - Anotar.NServiceBus.Fody
+    - Anotar
 
 - Key: ABSDataBus
   Name: Azure Blob Storage Databus
@@ -20,8 +20,8 @@
   Category: Databus
   ProjectUrl: https://github.com/Particular/NServiceBus.DataBus.AzureBlobStorage
   NugetOrder:
-    - NServiceBus.DataBus.AzureBlobStorage
-    - NServiceBus.Azure
+    - ABSDataBus
+    - Azure
 
 - Key: ASB
   Name: Azure Service Bus Transport
@@ -29,7 +29,7 @@
   Category: Transport
   ProjectUrl: https://github.com/Particular/NServiceBus.AzureServiceBus
   NugetOrder:
-    - NServiceBus.Azure.Transports.WindowsAzureServiceBus
+    - ASB
 
 - Key: ASP
   Name: Azure Storage Persistence 
@@ -37,8 +37,8 @@
   Category: Persistence
   ProjectUrl: https://github.com/Particular/NServiceBus.Persistence.AzureStorage
   NugetOrder:
-    - NServiceBus.Persistence.AzureStorage
-    - NServiceBus.Azure
+    - ASP
+    - Azure
 
 - Key: ASQ
   Name: Azure Storage Queues Transport
@@ -46,7 +46,7 @@
   Category: Transport
   ProjectUrl: https://github.com/Particular/NServiceBus.AzureStorageQueues
   NugetOrder:
-    - NServiceBus.Azure.Transports.WindowsAzureStorageQueues
+    - ASQ
 
 - Key: Autofac
   Name: Autofac Container
@@ -54,7 +54,7 @@
   Category: Container
   ProjectUrl: https://github.com/Particular/NServiceBus.Autofac
   NugetOrder:
-    - NServiceBus.Autofac
+    - Autofac
 
 - Key: Callbacks
   Name: Callbacks
@@ -62,8 +62,8 @@
   Category: Other
   ProjectUrl: https://github.com/Particular/NServiceBus.Callbacks
   NugetOrder:
-    - NServiceBus.Callbacks
-    - NServiceBus
+    - Callbacks
+    - Core
 
 - Key: Castle
   Name: Castle Container
@@ -71,7 +71,7 @@
   Category: Container
   ProjectUrl: https://github.com/Particular/NServiceBus.CastleWindsor
   NugetOrder:
-    - NServiceBus.CastleWindsor
+    - Castle
 
 - Key: CloudServicesHost
   Name: Azure Cloud Service Host
@@ -79,7 +79,7 @@
   Category: Host
   ProjectUrl: https://github.com/Particular/NServiceBus.Host.AzureCloudService
   NugetOrder:
-    - NServiceBus.Hosting.Azure
+    - CloudServicesHost
 
 - Key: CommonLogging
   Name: CommonLogging
@@ -87,7 +87,7 @@
   Category: Logger
   ProjectUrl: https://github.com/Particular/NServiceBus.CommonLogging
   NugetOrder:
-    - NServiceBus.CommonLogging
+    - CommonLogging
 
 - Key: CustomChecks
   Name: ServiceControl CustomChecks
@@ -95,10 +95,10 @@
   Category: Other
   ProjectUrl: https://github.com/Particular/?query=CustomChecks
   NugetOrder:
-    - ServiceControl.Plugin.Nsb6.CustomChecks
-    - ServiceControl.Plugin.Nsb5.CustomChecks
-    - ServiceControl.Plugin.Nsb4.CustomChecks
-    - ServiceControl.Plugin.Nsb3.CustomChecks
+    - CustomChecks6
+    - CustomChecks5
+    - CustomChecks4
+    - CustomChecks3
 
 - Key: Distributor
   Name: Distributor
@@ -106,8 +106,8 @@
   Category: Other
   ProjectUrl: https://github.com/Particular/NServiceBus.Distributor.Msmq
   NugetOrder:
-    - NServiceBus.Distributor.MSMQ
-    - NServiceBus
+    - Distributor
+    - Core
 
 - Key: Gateway
   Name: Gateway
@@ -115,8 +115,8 @@
   Category: Other
   ProjectUrl: https://github.com/Particular/NServiceBus.Gateway
   NugetOrder:
-    - NServiceBus.Gateway
-    - NServiceBus
+    - Gateway
+    - Core
 
 - Key: Host
   Name: NServiceBus Host
@@ -124,7 +124,7 @@
   Category: Host
   ProjectUrl: https://github.com/Particular/NServiceBus.Host
   NugetOrder:
-    - NServiceBus.Host
+    - Host
 
 - Key: Jil
   Name: Jil Serializer
@@ -132,7 +132,7 @@
   Category: Serializer
   ProjectUrl: https://github.com/SimonCropp/NServiceBus.Jil
   NugetOrder:
-    - NServiceBus.Jil
+    - Jil
 
 - Key: Log4Net
   Name: Log4Net Logger
@@ -140,8 +140,8 @@
   Category: Logger
   ProjectUrl: https://github.com/Particular/NServiceBus.Host
   NugetOrder:
-    - NServiceBus.Log4Net
-    - NServiceBus
+    - Log4Net
+    - Core
 
 - Key: MessagePack
   Name: MessagePack Serializer
@@ -149,7 +149,7 @@
   Category: Serializer
   ProjectUrl: https://github.com/SimonCropp/NServiceBus.MessagePack
   NugetOrder:
-    - NServiceBus.MessagePack
+    - MessagePack
 
 - Key: Mongo
   Name: MongoDB Persistence
@@ -157,7 +157,7 @@
   Category: Persistence
   ProjectUrl: https://github.com/tekmaven/NServiceBus.Persistence.MongoDb
   NugetOrder:
-    - NServiceBus.Persistence.MongoDb
+    - Mongo
 
 - Key: Newtonsoft
   Name: Newtonsoft Serializer
@@ -165,7 +165,7 @@
   Category: Serializer
   ProjectUrl: https://github.com/Particular/NServiceBus.Newtonsoft.Json
   NugetOrder:
-    - NServiceBus.Newtonsoft.Json
+    - Newtonsoft
 
 - Key: NHibernate
   Name: NHibernate Persistence
@@ -173,7 +173,7 @@
   Category: Persistence
   ProjectUrl: https://github.com/Particular/NServiceBus.NHibernate
   NugetOrder:
-    - NServiceBus.NHibernate
+    - NHibernate
 
 - Key: Ninject
   Name: Ninject Container
@@ -181,7 +181,7 @@
   Category: Container
   ProjectUrl: https://github.com/Particular/NServiceBus.Ninject
   NugetOrder:
-    - NServiceBus.Ninject
+    - Ninject
 
 - Key: NLog
   Name: NLog Logger
@@ -189,8 +189,8 @@
   Category: Logger
   ProjectUrl: https://github.com/Particular/NServiceBus.NLog
   NugetOrder:
-    - NServiceBus.NLog
-    - NServiceBus
+    - NLog
+    - Core
 
 - Key: Rabbit
   Name: RabbitMQ Transport
@@ -198,7 +198,7 @@
   Category: Transport
   ProjectUrl: https://github.com/Particular/NServiceBus.RabbitMQ
   NugetOrder:
-    - NServiceBus.RabbitMQ
+    - Rabbit
 
 - Key: Raven
   Name: RavenDB Persistence
@@ -206,7 +206,7 @@
   Category: Persistence
   ProjectUrl: https://github.com/Particular/NServiceBus.RavenDB
   NugetOrder:
-    - NServiceBus.RavenDB
+    - Raven
 
 - Key: Serilog
   Name: Serilog Logger
@@ -214,7 +214,7 @@
   Category: Logger
   ProjectUrl: https://github.com/SimonCropp/NServiceBus.Serilog
   NugetOrder:
-    - NServiceBus.Serilog
+    - Serilog
 
 - Key: ServiceBootstrap
   Name: Windows Service Bootstrap
@@ -222,7 +222,7 @@
   Category: Host
   ProjectUrl: https://github.com/Particular/NServiceBus.Bootstrap.WindowsService
   NugetOrder:
-    - NServiceBus.Bootstrap.WindowsService
+    - ServiceBootstrap
 
 - Key: ServiceControl
   Name: ServiceControl
@@ -238,7 +238,7 @@
   Category: Container
   ProjectUrl: https://github.com/Particular/NServiceBus.Spring
   NugetOrder:
-    - NServiceBus.Spring
+    - Spring
 
 - Key: SqlServer
   Name: SQL Server Transport
@@ -246,7 +246,7 @@
   Category: Transport
   ProjectUrl: https://github.com/Particular/NServiceBus.SqlServer
   NugetOrder:
-    - NServiceBus.SqlServer
+    - SqlServer
 
 - Key: StructureMap
   Name: StructureMap Container
@@ -254,7 +254,7 @@
   Category: Container
   ProjectUrl: https://github.com/Particular/NServiceBus.StructureMap
   NugetOrder:
-    - NServiceBus.StructureMap
+    - StructureMap
 
 - Key: Testing
   Name: Testing
@@ -262,7 +262,7 @@
   Category: Other
   ProjectUrl: https://github.com/Particular/NServiceBus.Testing
   NugetOrder:
-    - NServiceBus.Testing
+    - Testing
 
 - Key: Unity
   Name: Unity Container
@@ -270,7 +270,7 @@
   Category: Container
   ProjectUrl: https://github.com/Particular/NServiceBus.Unity
   NugetOrder:
-    - NServiceBus.Unity
+    - Unity
 
 - Key: Wire
   Name: Wire Serializer
@@ -278,4 +278,4 @@
   Category: Serializer
   ProjectUrl: https://github.com/hmemcpy/NServiceBus.Wire
   NugetOrder:
-    - NServiceBus.Wire
+    - Wire
