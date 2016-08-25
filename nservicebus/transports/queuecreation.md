@@ -1,6 +1,6 @@
 ---
-title: Declaring and creating queues
-summary: Explains how to declare and create additional queues
+title: Creating queues
+summary: Explains how queues are created
 component: Core
 reviewed: 2016-08-25
 versions: '[4,]'
@@ -10,13 +10,21 @@ tags:
  - Queue creation
 ---
 
-This page describes the declaration and creation process of queues. Usually only transports need to deal with queue declaration and creation.
+NServiceBus will automatically request the transport to create queues needed if the [installers](/nservicebus/operations/installers.md) are enabled.
 
-NServiceBus queue creation process is pluggable. The process consists of two phases:
+This also includes queues needed by all declared [satellites](/nservicebus/satellites).
 
-* Declaring queues which need to be created
-* Creating the declared queues.
+Please refer to the scripting guidelines to take full control over queue creation:
 
+TODO: Should we have a scripting landing page?
+
+* [SqlServer](/nservicebus/sqlserver/operations-scripting#create-queues)
+* [MSMQ](/nservicebus/msmq/operations-scripting#create-queues)
+* [RabbitMQ](/nservicebus/rabbitmq/operations-scripting#create-queues)
+
+TODO: There is no scripting pages for ASQ and ASB
+
+### TODO - I think we can delete all the below content?
 
 ## Declaration
 

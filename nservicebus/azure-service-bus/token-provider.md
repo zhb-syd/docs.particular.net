@@ -14,7 +14,7 @@ This is useful when, for example, delegating authentication and authorization to
 
 Changing the authentication mechanism is done using the [Azure Service Bus SDK's TokenProvider class](https://msdn.microsoft.com/en-us/library/microsoft.servicebus.tokenprovider.aspx). The Azure Service Bus SDK requires an instance of this class at 2 different levels.
 
- * `NamespaceManager`: requires a `TokenProvider` that issues tokens with manage rights on the namespace. Note that this is only needed if queue creation is enabled, so that it can list, create and update entities in the namespace.
+ * `NamespaceManager`: requires a `TokenProvider` that issues tokens with manage rights on the namespace. Note that this is only needed if [queue creation](/nservicebus/transports/queuecreation) is enabled, so that it can list, create and update entities in the namespace.
  * `MessagingFactory`: requires a `TokenProvider` that issues tokens with at least send or receive rights on the entities used by the endpoint.
 
 By default the transport configures the token provider at the level of the `NamespaceManager` using the connectionstring information and reuses this instance for the `MessagingFactory`.
